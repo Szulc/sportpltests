@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es5",
+    "types": ["Cypress", "cypress-wait-until", "cypress-file-upload"]
+  },
+  "include": ["**/*.ts", "cypress/support/utils.ts"],
+  "exclude": ["/node_modules/"]
+}
