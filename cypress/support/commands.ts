@@ -51,3 +51,13 @@ Cypress.Commands.add('closeCookieBanner', () => {
     }
   })
 })
+
+// Cypress.Commands.add('hideBar', () => {
+//   cy.log('hide navigation bar');  
+//   cy.get('nav.mod').invoke('hide');
+// })
+
+// Cypress.Commands.add('showBar', () => {
+//   cy.log('show navigation bar');  
+//   cy.get('nav.mod').invoke('show');
+// })

@@ -1,0 +1,20 @@
+import FootballPage from "../pages/FootballPage";
+
+class Navigation {
+
+    navigateToFootball() {
+        this.getNavigationElement(3).click()
+        cy.closeCookieBanner()
+        return new FootballPage()
+    }
+
+    /**
+     * Select navigation element.
+     * @example
+     *    getNavigationElement(1)
+     */
+    private getNavigationElement(value: number) {
+        return cy.get(`#e${value}`)
+    }
+}
+export default Navigation;
