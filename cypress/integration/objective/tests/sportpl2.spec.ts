@@ -19,11 +19,15 @@ describe('Sport.pl page tests', function () {
         it('Check source', function () {
             main.navigation.navigateToFootball()
             football.clickTile(1)
-            footballinfo.checkScript()
+            footballinfo.checkScript().then(() => {
+                expect(status).to.be.true
+            })
             cy.go('back')
             cy.closeCookieBanner()
             football.clickTile(30)
-            footballinfo.checkScript()
+            footballinfo.checkScript().then(() => {
+                expect(status).to.be.true
+            })
         })
     })
 })
