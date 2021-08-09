@@ -51,3 +51,9 @@ Cypress.Commands.add('closeCookieBanner', () => {
     }
   })
 })
+
+Cypress.Commands.add('navigate', (direction: Cypress.HistoryDirection) => {
+  cy.log(`navigate in browser ${direction}`)
+  cy.go(direction)
+  cy.closeCookieBanner()
+})

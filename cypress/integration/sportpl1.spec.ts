@@ -1,11 +1,10 @@
 /// <reference types="Cypress" />
 /// <reference path="../support/index.d.ts" />
 
-let footerUpperLinks = ['Sport', 'Dziecko', 'TOK FM', 'Horoskopy', 'Gazeta Wyborcza', 'Zakupy', 'Haps', 'Wiadomości', 'Gazeta.pl']
-let footerMiddleLinks = ['Poczta', 'Newsletter', 'Wszystkie artykuły', 'Facebook']
-let footerLowerLinks = ['O Nas', 'RSS', 'Reklama', 'Prywatność', 'Zgłoś błąd', 'Zgody']
-
 describe('Sport.pl page tests', function () {
+    let footerUpperLinks = ['Sport', 'Dziecko', 'TOK FM', 'Horoskopy', 'Gazeta Wyborcza', 'Zakupy', 'Haps', 'Wiadomości', 'Gazeta.pl']
+    let footerMiddleLinks = ['Poczta', 'Newsletter', 'Wszystkie artykuły', 'Facebook']
+    let footerLowerLinks = ['O Nas', 'RSS', 'Reklama', 'Prywatność', 'Zgłoś błąd', 'Zgody']
 
     this.beforeAll(function () {
         cy.visit('/');
