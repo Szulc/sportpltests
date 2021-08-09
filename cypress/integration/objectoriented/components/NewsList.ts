@@ -3,4 +3,4 @@ class NewsList {
         return cy.get('.newsList > li')
     }
 }
-export default NewsList;
+export default NewsList

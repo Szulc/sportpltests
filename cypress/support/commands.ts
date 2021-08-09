@@ -52,12 +52,8 @@ Cypress.Commands.add('closeCookieBanner', () => {
   })
 })
 
-// Cypress.Commands.add('hideBar', () => {
-//   cy.log('hide navigation bar');  
-//   cy.get('nav.mod').invoke('hide');
-// })
-
-// Cypress.Commands.add('showBar', () => {
-//   cy.log('show navigation bar');  
-//   cy.get('nav.mod').invoke('show');
-// })
+Cypress.Commands.add('navigate', (direction: Cypress.HistoryDirection) => {
+  cy.log(`navigate in browser ${direction}`)
+  cy.go(direction)
+  cy.closeCookieBanner()
+})

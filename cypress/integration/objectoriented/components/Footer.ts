@@ -18,7 +18,7 @@ class Footer {
     }
 
     getCopyrights() {
-        return this.getFooter().children('a');
+        return this.getFooter().children('a')
     }
 }
-export default Footer;
+export default Footer

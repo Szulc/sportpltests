@@ -1,8 +1,9 @@
-import FootballPage from "../pages/FootballPage";
+import FootballPage from "../pages/FootballPage"
 
 class Navigation {
 
     navigateToFootball() {
+        cy.log(`navigate to football`)
         this.getNavigationElement(3).click()
         cy.closeCookieBanner()
         return new FootballPage()
@@ -17,4 +18,4 @@ class Navigation {
         return cy.get(`#e${value}`)
     }
 }
-export default Navigation;
+export default Navigation

@@ -7,9 +7,9 @@ import MainPage from '../pages/MainPage';
 
 describe('Sport.pl page tests', function () {
 
-    const main = new MainPage();
-    const football = new FootballPage();
-    const footballinfo = new FootballInfoPage();
+    const main = new MainPage()
+    const football = new FootballPage()
+    const footballinfo = new FootballInfoPage()
 
     this.beforeAll(function () {
         main.visit();
@@ -18,16 +18,11 @@ describe('Sport.pl page tests', function () {
     describe('Second test', function () {
         it('Check source', function () {
             main.navigation.navigateToFootball()
-            football.clickTile(1)
-            footballinfo.checkScript().then(() => {
-                expect(status).to.be.true
-            })
-            cy.go('back')
-            cy.closeCookieBanner()
-            football.clickTile(30)
-            footballinfo.checkScript().then(() => {
-                expect(status).to.be.true
-            })
+            football.tiles.clickTile(1)
+            footballinfo.checkScript()
+            cy.navigate('back')
+            football.tiles.clickTile(30)
+            footballinfo.checkScript()
         })
     })
 })

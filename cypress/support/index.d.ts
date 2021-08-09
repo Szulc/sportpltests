@@ -10,7 +10,6 @@ declare namespace Cypress {
     */
     closeCookieBanner(): Chainable<Element>
     setResolution(value: number): Chainable<Element>
-    // hideBar(): Chainable<Element>
-    // showBar(): Chainable<Element>
+    navigate(direction: Cypress.HistoryDirection): Chainable<Element>
   }
 }

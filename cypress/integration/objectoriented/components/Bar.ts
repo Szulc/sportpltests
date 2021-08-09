@@ -7,4 +7,4 @@ class Bar {
         return cy.get('nav.mod').invoke('show')
     }
 }
-export default Bar;
+export default Bar

@@ -3,4 +3,4 @@ class Logo {
         return cy.get('.imgw > a > img')
     }
 }
-export default Logo;
+export default Logo

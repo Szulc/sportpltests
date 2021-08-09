@@ -5,6 +5,10 @@
   "private": true,
   "scripts": {
     "run": "cypress run --spec 'cypress/integration/*.spec.ts' --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "run1": "cypress run --spec 'cypress/integration/objectoriented/tests/sportpl1.spec.ts' --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "run2": "cypress run --spec 'cypress/integration/objectoriented/tests/sportpl2.spec.ts' --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "run3": "cypress run --spec 'cypress/integration/objectoriented/tests/sportpl3.spec.ts' --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "run4": "cypress run --spec 'cypress/integration/objectoriented/tests/sportpl4.spec.ts' --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "open": "cypress open"
   },
   "keywords": [],
